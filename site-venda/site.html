@@ -12,11 +12,27 @@
         <h1>firga gelatos</h1>
     </div>
 
-    <div class="card">
-        <img src="images/geladinho_morango.jpg" alt="" class="img">
-        <h3 id="nome">geladinho de morango</h3>
-        <h3 id="preco">uma porshe 911</h3>
-        <button class="btn">compre agora</button>
+    <div id="telaprincipal">
+        <div class="card">
+            <img src="images/geladinho_ninho.jpg" alt="" class="img">
+            <h3 id="nome">geladinho de leite ninho</h3>
+            <h3 id="preco">R$ uma porshe 911</h3>
+            <button class="btn">compre agora</button>
+        </div>
+
+        <div class="card">
+            <img src="images/geladinho_morango.jpg" alt="" class="img">
+            <h3 id="nome">geladinho de morango</h3>
+            <h3 id="preco">R$ uma porshe 911</h3>
+            <button class="btn">compre agora</button>
+        </div>
+
+        <div class="card">
+            <img src="images/geladinho_chocolate.jpg" alt="" class="img">
+            <h3 id="nome">geladinho de chocolate</h3>
+            <h3 id="preco">R$ uma porshe 911</h3>
+            <button class="btn">compre agora</button>
+        </div>
     </div>
 </body>
 
@@ -28,10 +44,12 @@
 
     h1{
         margin-left: 600px;
+        font-size: 60px;
     }
 
     #cabecalho{
         display: flex;
+        align-items: center;
     }
 
     .img{
@@ -45,15 +63,27 @@
 
     .card{
         margin-top: 20px;
+        text-align: center;
     }
 
     .btn{
-        background-color:#A53860 ;
+        background-color:#a93c64 ;
         color: white;
         font-size: 40px;
         border: none;
         border-radius: 12px;
         padding: 20px ;
+        cursor: pointer;
+        transition: linear 0.5s;
+    }
+
+    #telaprincipal{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .btn:hover{
+        background-color: #ff96bc;
     }
     
 </style>
